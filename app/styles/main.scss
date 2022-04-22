@@ -165,14 +165,16 @@ $background:#F7EDE8;
   width: 100%;
   background-color: $background;
   padding: 120px 0;
-
+  margin: 0 auto;
   .content3 {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     padding: 20px 0;
     display: flex;
     align-items: center;
-
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
     .text {
       font-size: 22.65px;
       font-weight: 700;
