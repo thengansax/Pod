@@ -27,29 +27,73 @@
 <body>
     <div class="wrapper">
 
-        <div class="header content">
-            <div class="header_icon">
-                <div class="text">
-
-                    <div>Pod</div> of Cast
-
+      <div class="navMenu">
+        <div class="overlay">
+          <div class="inner">
+            <div class="up">
+              <div class="avatar"></div>
+              <div class="text">Hello ,Guest</div>
+              <div class="close">
+                <i class="fas fa-times closeBtn"></i>
+              </div>
+            </div>
+            <div class="down">
+              <div class="option">
+                <div class="icon">
+                  <i class="fa-solid fa-house"></i>
                 </div>
-            </div>
-            <div class="header_menu">
-                <div class="item">Episodes</div>
-                <div class="item">About</div>
-                <div class="item_drop">
-                    <div class="text">More</div>
-                    <div class="img">
-                        <img src="images/Arrow.png" alt="" srcset="">
-                    </div>
+                <div class="option_text"> <a href="./index.html"> Home</a></div>
+              </div>
+              <div class="option">
+                <div class="icon">
+                  <i class="fa-solid fa-book"></i>
                 </div>
+                <div class="option_text"> <a href="./about.html"> About</a></div>
+              </div>
+              <div class="option">
+                <div class="icon">
+                  <i class="fa-solid fa-info"></i>
+                </div>
+                <div class="option_text"> <a href="./detail.html"> Detail</a></div>
+              </div>
+              <div class="option">
+                <div class="icon">
+                  <i class="fa-solid fa-house"></i>
+                </div>
+                <div class="option_text"> <a href="./index.html"> Home</a></div>
+              </div>
             </div>
-            <div class="button_wrap">
-                <div class="button1">RECENT EPISODES</div>
-                <div class="button2">SUBSCRIBE</div>
-            </div>
+          </div>
         </div>
+  </div>
+  <div class="header content">
+    <div class="header_icon">
+      <div class="img">
+
+      <img src="./images/waybackhome.png" alt="" srcset="">
+
+      </div>
+    </div>
+    <div class="header_menu">
+      <div class="item"><a href="./detail.html">Episodes</a> </div>
+      <div class="item"> <a href="./about.html">About</a> </div>
+      <div class="item_drop">
+        <div class="text"> <a href="">More</a> </div>
+        <div class="img">
+          <img src="images/Arrow.png" alt="" srcset="">
+        </div>
+      </div>
+    </div>
+    <div class="button_wrap">
+      <div class="button1">RECENT EPISODES</div>
+      <div class="button2">SUBSCRIBE</div>
+      <div class="header__hamburgerMenu">
+        <div class="hambuger">
+            <i class="fas fa-bars openBtn"></i>
+        </div>
+    </div>
+    </div>
+  </div>
 
         <div class="content1 content">
             <div class="left">
@@ -397,7 +441,8 @@
 
     <!-- endbuild -->
     <!-- build:js scripts/main.js -->
-    <script src="scripts/detail.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/StickyMenu.js"></script>
     <!-- endbuild -->
 </body>
 

@@ -23,3 +23,41 @@ $('.content2').slick({
     nextArrow: '<div class="slick-next"><i class="fa-solid fa-chevron-left"></i></div>',
     centerMode: true,
   });
+
+  let hambuger = document.querySelector(".hambuger");
+  let navMenu = document.querySelector(".navMenu");
+  let closeMenu   = document.querySelector(".close");
+  let overLay = document.querySelector(".overlay")
+  let menuInner = document.querySelector(".inner")
+  hambuger.addEventListener("click", ()=>{
+    navMenu.style.display = "block";
+  })
+  
+  closeMenu.addEventListener("click", ()=>{
+    navMenu.style.display = "none";
+  })
+
+  overLay.addEventListener("click", ()=>{
+    navMenu.style.display = "none";
+  })
+
+  menuInner.addEventListener("click", (e) => {
+    e.stopPropagation();
+  });
+  
+  const shutdownMenu = () =>{
+    let body = document.querySelector("body");
+
+    let width = body.offsetWidth;
+
+    console.log(width)
+    if(width > 768)
+    {
+      navMenu.style.display = "none";
+    }
+  }
+  $(window).resize(function(){
+ 
+   coc();
+ 
+});
